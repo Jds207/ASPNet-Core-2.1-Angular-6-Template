@@ -1,0 +1,28 @@
+<div class="container">
+
+  <header class="pageHeader">
+    <h3><i class="fa fa-address-card fa-lg page-caption" aria-hidden="true"></i> {{'pageHeader.WindowTasks' | translate}}</h3>
+  </header>
+  <div [@fadeInOut] class="row">
+    <div class="col-sm-2 side-menu">
+      <ul bootstrapTab #tab="bootstrap-tab" class="nav nav-tabs tabs-left" (showBSTab)="onShowTab($event)">
+        <li class="active">
+          <a id="tasksTab" [routerLink]="[]" fragment="tasks" href="#tasks" data-toggle="tab"><i class="fa fa-user-circle-o fa-fw" aria-hidden="true"></i> {{'settings.tab.Tasks' | translate}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <div class="tab-content">
+        <div class="tab-pane active" id="tasks">
+          <h4>{{'settings.header.TaskManagment' | translate}}</h4>
+          <hr class="separator-hr" />
+          <div [@fadeInOut] *ngIf="isTaskActivated" class="content-container">
+          
+            <manage-tasks></manage-tasks>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

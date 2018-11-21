@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DAL</id>
+    <version>2.6.1</version>
+    <authors>DAL</authors>
+    <owners>DAL</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/emonney/QuickApp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/emonney/QuickApp</projectUrl>
+    <description>Data Access Layer for the Quick Application template</description>
+    <copyright>Copyright © 2018 www.ebenmonney.com</copyright>
+    <repository url="https://github.com/emonney/QuickApp.git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="2.1.2" exclude="Build,Analyzers" />
+        <dependency id="OpenIddict" version="2.0.0-rc3-final" exclude="Build,Analyzers" />
+        <dependency id="OpenIddict.EntityFrameworkCore" version="2.0.0-rc3-final" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\GitHub\CTI_Admin\CTI_Admin\DAL\bin\Debug\netstandard2.0\DAL.dll" target="lib\netstandard2.0\DAL.dll" />
+  </files>
+</package>

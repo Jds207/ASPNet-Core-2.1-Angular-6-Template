@@ -1,0 +1,30 @@
+2018-11-15T16:44:01.7836571-06:00 0HLIB9EGTBVM1:00000003 [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"admin\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email phone profile offline_access roles\"
+}". (ebc01284)
+2018-11-15T16:44:01.8287247-06:00 0HLIB9EGTBVM1:00000003 [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2018-11-15T16:44:01.8315489-06:00 0HLIB9EGTBVM1:00000003 [INF] The token request was successfully validated. (d7e51e65)
+2018-11-15T16:44:01.8471957-06:00 0HLIB9EGTBVM1:00000003 [DBG] The default token request handling was skipped from user code. (72afae05)
+2018-11-15T16:44:08.0045379-06:00 0HLIB9EGTBVM1:00000003 [INF] An ad hoc authorization was automatically created and associated with an unknown application: "4ceac0d7-03d5-4ce3-bf6b-a416e4709f05". (b5fe4ad7)
+2018-11-15T16:44:08.0298807-06:00 0HLIB9EGTBVM1:00000003 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2018-11-15T16:44:08.0326382-06:00 0HLIB9EGTBVM1:00000003 [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2018-11-15T16:44:08.0352459-06:00 0HLIB9EGTBVM1:00000003 [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2018-11-15T16:44:08.0373695-06:00 0HLIB9EGTBVM1:00000003 [DBG] '"phone"' was excluded from the access token claims. (ed8f369e)
+2018-11-15T16:44:08.1852237-06:00 0HLIB9EGTBVM1:00000003 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2018-11-15T16:44:08.2042247-06:00 0HLIB9EGTBVM1:00000003 [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2018-11-15T16:44:19.7408379-06:00 0HLIB9EGTBVM0:00000006 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2018-11-15T16:44:19.7408369-06:00 0HLIB9EGTBVM7:00000002 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2018-11-15T16:45:07.6739544-06:00 0HLIB9EGTBVM6:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2018-11-15T16:45:07.6760708-06:00 0HLIB9EGTBVM8:00000002 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2018-11-15T16:45:07.6785742-06:00 0HLIB9EGTBVM6:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2018-11-15T16:45:48.4040625-06:00 0HLIB9EGTBVMA:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2018-11-15T16:45:48.4059409-06:00 0HLIB9EGTBVM8:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2018-11-15T16:45:48.4080089-06:00 0HLIB9EGTBVMA:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)

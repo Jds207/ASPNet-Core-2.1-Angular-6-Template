@@ -1,0 +1,9 @@
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\bin\Release\netstandard2.0\DAL.deps.json
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\bin\Release\netstandard2.0\DAL.dll
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\bin\Release\netstandard2.0\DAL.pdb
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Release\netstandard2.0\DAL.csprojAssemblyReference.cache
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Release\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfoInputs.cache
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfo.cs
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Release\netstandard2.0\DAL.dll
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Release\netstandard2.0\DAL.pdb

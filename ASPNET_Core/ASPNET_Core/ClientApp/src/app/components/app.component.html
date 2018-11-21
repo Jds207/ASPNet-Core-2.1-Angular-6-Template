@@ -1,0 +1,97 @@
+<div id="app_container" class="{{configurations.theme | lowercase}}-theme">
+  <ngx-toasta></ngx-toasta>
+  <div class='container'>
+    <nav id="header" class="navbar navbar-inner navbar-fixed-top">
+      <mat-sidenav-container class="sidenav-container">
+
+        <mat-sidenav #drawer
+                     class="sidenav"
+                     fixedInViewport="true"
+                     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+                     [mode]="(isHandset$ | async) ? 'over' : 'side'"
+                     [opened]="!(isHandset$ | async)">
+          <mat-toolbar class="mainBackground">{{appTitle}}</mat-toolbar>
+
+          <mat-nav-list>
+            <ul class="app-component nav navBarPadding">
+              <li mat-list-item routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink=""><span class="glyphicon glyphicon-home"></span></a></li>
+              <!--<li mat-list-item routerLinkActive="active" *ngIf="canViewCustomers"><a routerLink="/customers">{{'mainMenu.Customers' | translate}}</a></li>
+              <li mat-list-item routerLinkActive="active" *ngIf="canViewProducts"><a routerLink="/products">{{'mainMenu.Products' | translate}}</a></li>
+              <li mat-list-item routerLinkActive="active" *ngIf="canViewOrders"><a routerLink="/orders">{{'mainMenu.Orders' | translate}}</a></li>-->
+              <li mat-list-item routerLinkActive="active" *ngIf="canViewTasks" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/windowTasks">{{'mainMenu.WindowTasks' | translate}}</a></li>
+
+              <!--<li mat-list-item routerLinkActive="active"><a routerLink="/about">{{'mainMenu.About' | translate}}</a></li>-->
+
+
+            </ul>
+
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <mat-toolbar class="top-nav">
+            <button type="button"
+                    aria-label="Toggle sidenav"
+                    mat-icon-button
+                    (click)="drawer.toggle()">
+              <mat-icon aria-label="Side nav toggle icon"><span class="glyphicon glyphicon-menu-hamburger"></span></mat-icon>
+            </button>
+            <div *ngIf="isUserLoggedIn" class="collapse navbar-collapse menuItemsContainer">
+
+              <ul class="nav navbar-nav nav-pills navBarPadding navbar-right">
+                <li (click)="logout()"><a href="javascript:;"><span class="glyphicon glyphicon-log-out"></span> {{'mainMenu.Logout' | translate}}</a></li>
+              </ul>
+              <ul class="nav navbar-nav nav-pills navBarPadding navbar-right">
+                <li><a href="javascript:;">{{'app.Welcome' | translate}}  {{userName}}</a></li>
+              </ul>
+              <ul class="nav navbar-nav nav-pills navBarPadding navbar-right">
+                <li routerLinkActive="active"><a routerLink="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+              </ul>
+            </div>
+          </mat-toolbar>
+          <!-- Add Content Here -->
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </nav>
+    <ng-template #popTemplate>
+      <notifications-viewer [isViewOnly]="true"></notifications-viewer>
+    </ng-template>
+
+
+    <div id="pre-bootstrap" *ngIf="!removePrebootScreen" [class.prebootShow.app-component]="!isAppLoaded" class="app-component prebootStep">
+      <div class="messaging">
+        <h1>
+          Loaded!
+        </h1>
+        <p>
+          CTI Foods
+        </p>
+      </div>
+    </div>
+
+    <div id="mainContent" class="app-component">
+      <router-outlet></router-outlet>
+    </div>
+
+    <div id="footer">
+      <div class="app-component navbar-fixed-bottom navbar-inner footer">
+        <div class="container">
+          <footer>
+            <div class="app-component vcenter_text center-block">
+              <p class="text-center text-muted">
+                <span class="appName" style="font-style:italic">CTI Foods</span> &copy; {{getYear()}}
+
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="shouldShowLoginModal" class="modal fade" bsModal #loginModal="bs-modal" (onShown)="onLoginModalShown()" (onHidden)="onLoginModalHidden()" (onHide)="onLoginModalHide()"
+       [config]="{backdrop: 'static'}" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <app-login #loginControl isModal="true"></app-login>
+    </div>
+  </div>
+</div>

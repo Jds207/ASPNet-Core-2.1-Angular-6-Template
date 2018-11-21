@@ -1,0 +1,17 @@
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\bin\Debug\netstandard2.0\DAL.dll
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\bin\Debug\netstandard2.0\DAL.pdb
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Debug\netstandard2.0\DAL.dll
+C:\GitHub\CTI_Admin\CTI_Admin\DAL\obj\Debug\netstandard2.0\DAL.pdb
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\bin\Debug\netstandard2.0\DAL.dll
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\bin\Debug\netstandard2.0\DAL.pdb
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\obj\Debug\netstandard2.0\DAL.dll
+C:\GitHub\Angular 6 ASPNET Core\ASPNET_Core\DAL\obj\Debug\netstandard2.0\DAL.pdb
